@@ -1,0 +1,10 @@
+---
+# tasks file for gpt2
+- name: install transformers
+  shell: conda install -c conda-forge transformers 
+
+- name: clone run_language_modeling
+  git: 
+    repo: 'https://github.com/fpga-tom/nngen/run_language_modeling.py'
+    dest: /workspace/
+    
