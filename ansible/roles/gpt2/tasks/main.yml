@@ -1,10 +1,10 @@
 ---
 # tasks file for gpt2
 - name: install transformers
-  shell: conda install -c conda-forge transformers 
+  shell: pip install transformers tensorboardX
 
 - name: clone run_language_modeling
   git: 
-    repo: 'https://github.com/fpga-tom/nngen/run_language_modeling.py'
-    dest: /workspace/
+    repo: 'https://github.com/fpga-tom/nngen.git'
+    dest: /workspace/nngen
     
